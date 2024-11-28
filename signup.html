@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE VEHICLE SERVICES</title>
+    <style>
+.container {
+    background-color:rgb(18, 18, 37); 
+	width: 500px;
+	margin: 40px auto;
+	padding: 10px;
+	border: 1px solid #000000;
+	box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+h1 {
+	text-align: center;
+    
+}
+
+form {
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"],input[type="tel"],
+input[type="email"],input[type="number"],input[type="file"] {
+	width: 60%;
+	padding: 5px;
+	margin-bottom: 20px;
+    background-color:rgb(126, 126, 134);
+    border-radius: 2px;
+    border-color: white;
+}
+
+button{
+    padding: 2%;
+    background-color: rgb(255, 26, 26);
+    border-radius: 3px;
+    color: white;
+}
+button:hover{
+    color: #000000;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>ONLINE VEHICLE SERVICE</h1>
+    </div>
+    <div class="container">
+        <form method="post" action="signup.php">
+            <h2>Admin sign up</h2>
+            <p>please fill the following credentials</p>
+              <label>First Name: <input type="text" name="firstname" required></label>
+              <label>Second Name: <input type="text" name="secondname" required></label>
+              <label>Last Name: <input type="text" name="lastname" required></label>
+              <label>Email: <input type="email" name="email" required></label>
+              <label>Phone: <input type="tel" name="phone" required></label>
+              <label>Photo: <input type="file" name="photo" required></label>
+              <label>Password: <input type="password" name="password" required></label>
+              <button type="submit" name="submit">Sign Up</button>
+              <p align="center"> already have an account <a href="login.html">login</a></p>
+          </form>
+	</div>
+    
+</body>
+</html>
